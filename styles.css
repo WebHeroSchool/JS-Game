@@ -88,14 +88,16 @@ body {
 }
 
 .game-page__level-easy {
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0fr 0fr 0fr;
+  grid-gap: 1.3vw;
   justify-content: center;
   margin-top: 212px;
   margin-right: -20px;
 }
 
 .level-easy__item {
-  padding-right: 21px;
   transition: translateY .5s, transform .5s;
 }
 
@@ -234,14 +236,16 @@ body {
   }
 
   .game-page__level-easy {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-gap: 1.3vw;
     justify-content: center;
     margin-top: 212px;
     margin-right: -20px;
   }
 
   .level-easy__item {
-    padding-right: 21px;
     transition: translateY .5s, transform .5s;
   }
 
@@ -375,14 +379,16 @@ body {
   }
 
   .game-page__level-easy {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-gap: 1.3vw;
     justify-content: center;
     margin-top: 212px;
     margin-right: -20px;
   }
 
   .level-easy__item {
-    padding-right: 21px;
     transition: translateY .5s, transform .5s;
   }
 
@@ -518,14 +524,16 @@ body {
   }
 
   .game-page__level-easy {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-gap: 1.3vw;
     justify-content: center;
     margin-top: 212px;
     margin-right: -20px;
   }
 
   .level-easy__item {
-    padding-right: 21px;
     transition: translateY .5s, transform .5s;
   }
 
