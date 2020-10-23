@@ -6,34 +6,37 @@
     <title>
       JS Game
     </title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='styles.css'>
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   </head>
   <body>
-    <div class='container'>
+    <div class='wrapper'>
       <div class='start-page'>
         <h1 class='start-page__heading'>
-          Выбери уровень сложности:
+          Выберите уровень сложности:
         </h1>
         <h4 class='start-page__subheading'>
           Выберите сложность и игра начнётся. Чем выше уровень - тем больше будет выборка карт.
         </h4>
-        <div class='start-page__first-part'>
-          <div class='first-part__choosing-list'>
-            <div class='choosing-list__easy'>
-              Простой
+        <div class='start-page__menu'>
+          <div class='menu__first-part'>
+            <div class='first-part__choosing-list'>
+              <div class='choosing-list__easy choosing-list__item'>
+                Простой
+              </div>
+              <div class='choosing-list__middle choosing-list__item'>
+                Средний
+              </div>
+              <div class='choosing-list__hard choosing-list__item'>
+                Сложный
+              </div>
             </div>
-            <div class='choosing-list__middle'>
-              Средний
-            </div>
-            <div class='choosing-list__hard'>
-              Сложный
-            </div>
+            <a class='first-part__button' href='#'>Начать игру</a>
           </div>
-          <a class='first-part__button' href='#'>Начать игру</a>
-        </div>
-        <div class='start-page__second-part'>
-          <img src='' alt='' class='second-part__first-card'>
-          <img src='' alt='' class='second-part__second-card'>
+          <div class='menu__second-part'>
+            <img src='img/card.png' alt='rhombus' class='second-part__first-card'>
+            <img src='img/card.png' alt='rhombus' class='second-part__second-card'>
+          </div>
         </div>
       </div>
       <div class='game-page'>
@@ -63,6 +66,7 @@
         </div>
       </div>
     </div>
+    <script src='script.js'></script>
   </body>
 </html>
 
