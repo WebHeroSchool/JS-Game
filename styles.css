@@ -112,9 +112,8 @@ body {
 
 @media (max-width: 1024px) {
   .start-page {
-    padding-left: 26px;
-    height: 100vh;
-    background-position: bottom 226px right -8px;
+    height: 100%;
+    background-position: bottom -11px right -8px;
   }
 
   .start-page__heading {
