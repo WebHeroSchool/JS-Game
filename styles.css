@@ -8,18 +8,20 @@ body {
 }
 
 .wrapper {
-  width: 100vw;
-  max-width: 1247px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1290px;
   z-index: 10;
   color: white;
 }
 
 .start-page {
   padding-top: 131px;
-  height: 78vh;
+  padding-left: 26px;
+  height: 100vh;
   background-image: url(img/cards.png);
   background-repeat: no-repeat;
-  background-position: bottom 2px right -34px;
+  background-position: bottom 226px right -8px;
 }
 
 .start-page__heading {
@@ -109,6 +111,12 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .start-page {
+    padding-left: 26px;
+    height: 100vh;
+    background-position: bottom 226px right -8px;
+  }
+
   .start-page__heading {
     font: 53px/63px Roboto, arial, helvetica, sans-serif;
     font-weight: 700;
@@ -120,8 +128,64 @@ body {
     font-weight: 700;
   }
 
+  .first-part__choosing-list {
+    margin-bottom: 63px;
+  }
+
   .choosing-list__item {
     font: 47px/56px Roboto, arial, helvetica, sans-serif;
     font-weight: 700;
   }
+
+  .game-page__levels {
+    grid-template-columns: 173px 173px 173px;
+    grid-gap: 1.2vw;
+  }
+
+  .levels__item {
+    width: 173px;
+    height: 233px;
+  }
 }
+
+@media (max-width: 375px) {
+  .start-page {
+    padding-top: 34px;
+    background-image: none;
+  }
+
+  .start-page__heading {
+    font: 47px/57px Roboto, arial, helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+  .start-page__subheading {
+    margin-bottom: 34px;
+    font: 14px/17px Roboto, arial, helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+  .choosing-list__item {
+    font: 42px/51px Roboto, arial, helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+  .first-part__button {
+    padding: 27px 71px;
+    font: 30px/35px Roboto bold, arial, helvetica, sans-serif;
+    background: #ba376c;
+  } 
+
+  .game-page__levels {
+    grid-template-columns: 87px 87px;
+    grid-gap: 1.2vw;
+  }
+
+  .levels__item {
+    width: 87px;
+    height: 117px;
+  }
+}
+
+
+
