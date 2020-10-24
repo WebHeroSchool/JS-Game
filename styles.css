@@ -8,11 +8,18 @@ body {
 }
 
 .wrapper {
-  margin: auto;
-  padding-top: 129px;
-  width: 86%;
+  width: 100vw;
+  max-width: 1247px;
   z-index: 10;
   color: white;
+}
+
+.start-page {
+  padding-top: 131px;
+  height: 78vh;
+  background-image: url(img/cards.png);
+  background-repeat: no-repeat;
+  background-position: bottom 2px right -34px;
 }
 
 .start-page__heading {
@@ -32,10 +39,6 @@ body {
 .start-page__menu {
   display: flex;
   justify-content: space-between;
-}
-
-.menu__first-part {
-
 }
 
 .first-part__choosing-list {
@@ -72,70 +75,26 @@ body {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
-.menu__second-part {
-  padding-top: 225px;
-}
-
-.second-part__first-card {
-  margin-right: -109px;
-  padding-bottom: 23px;
-}
-
-.second-part__second-card {
-  transform: rotate(28deg);
-  padding-top: 20px;
-  padding-right: 17px;
-}
-
-.game-page__level-easy {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 0fr 0fr 0fr;
-  grid-gap: 1.3vw;
-  justify-content: center;
-  margin-top: 212px;
-  margin-right: -20px;
-}
-
-.level-easy__item {
-  transition: translateY .5s, transform .5s;
-}
-
-.level-easy__item:hover {
-  transform: translateY(-38px) rotate(-3deg);
-}
-
-.game-page__level-middle {
-  display: grid;
-  margin-top: 29px;
-  grid-template-rows: 2fr;
-  grid-template-columns: 0fr 0fr 0fr;
-  grid-gap: 1.3vw;
+.game-page {
+  height: 100vh;
+  display: flex;
   justify-content: center;
 }
 
-.level-middle__item {
-  transition: translateY .5s, transform .5s;
-}
-
-.level-middle__item:hover {
-  transform: translateY(-38px) rotate(-3deg);
-}
-
-.game-page__level-hard {
+.game-page__levels {
   display: grid;
-  margin-top: 29px;
-  grid-template-rows: 2fr;
-  grid-template-columns: 0fr 0fr 0fr 0fr 0fr;
-  grid-gap: 1.3vw;
-  justify-content: center;
+  grid-template-columns: 215px 215px 215px;
+  grid-gap: 1.2vw;
+  align-content: center;
 }
 
-.level-hard__item {
+.levels__item {
+  width: 215px;
+  height: 301px;
   transition: translateY .5s, transform .5s;
 }
 
-.level-hard__item:hover {
+.levels__item:hover {
   transform: translateY(-38px) rotate(-3deg);
 }
 
@@ -149,429 +108,20 @@ body {
   content: url(img/bug.png);
 }
 
-@media (max-width: 1220px) {
-  body {
-  margin: 0;
-  background: url(img/background.jpg);
-  }
-
-  .off {
-    display: none;
-  }
-
-  .wrapper {
-    margin: auto;
-    padding-top: 129px;
-    width: 86%;
-    z-index: 10;
-    color: white;
-  }
-
-  .start-page__heading {
-    margin: 0;
-    margin-bottom: 9px;
-    font: 57px/67px Roboto, arial, helvetica, sans-serif;
-    font-weight: 700;
-  }
-
-  .start-page__subheading {
-    margin: 0;
-    margin-bottom: 60px;
-    font: 19px/22px Roboto, arial, helvetica, sans-serif;
-    font-weight: 700;
-  }
-
-  .start-page__menu {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .first-part__choosing-list {
-    margin-left: 51px;
-    margin-bottom: 112px;
-  }
-
-  .choosing-list__item {
-    position: relative;
-    cursor: pointer;
-    font: 50px/59px Roboto, arial, helvetica, sans-serif;
-    font-weight: 700;
-    margin-bottom: 24px;
-    transition: color 1s;
-  }
-
-  .choosing-list__item:hover {
-    color: #ba376c;
-  }
-
-  .first-part__button {
-    display: inline-block;
-    padding: 29px 88px;
-    text-decoration: none;
-    color: white;
-    font: 32px/37px Roboto bold, arial, helvetica, sans-serif;
-    border-radius: 7px;
-    background: #ba376c;
-    transition: ease .5s;
-  }
-
-  .first-part__button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
-  }
-
-  .menu__second-part {
-    padding-top: 23px;
-  }
-
-  .second-part__first-card {
-    margin-right: -109px;
-    padding-bottom: 23px;
-  }
-
-  .second-part__second-card {
-    transform: rotate(28deg);
-    padding-top: 20px;
-    padding-right: 17px;
-  }
-
-  .game-page__level-easy {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 0fr 0fr 0fr;
-    grid-gap: 1.3vw;
-    justify-content: center;
-    margin-top: 212px;
-    margin-right: -20px;
-  }
-
-  .level-easy__item {
-    transition: translateY .5s, transform .5s;
-  }
-
-  .level-easy__item:hover {
-    transform: translateY(-38px) rotate(-3deg);
-  }
-
-  .game-page__level-middle {
-    display: grid;
-    margin-top: 29px;
-    grid-template-rows: 2fr;
-    grid-template-columns: 0fr 0fr 0fr;
-    grid-gap: 1.3vw;
-    justify-content: center;
-  }
-
-  .level-middle__item {
-    transition: translateY .5s, transform .5s;
-  }
-
-  .level-middle__item:hover {
-    transform: translateY(-38px) rotate(-3deg);
-  }
-
-  .game-page__level-hard {
-    display: grid;
-    margin-top: 29px;
-    grid-template-rows: 2fr;
-    grid-template-columns: 0fr 0fr 0fr 0fr 0fr;
-    grid-gap: 1.3vw;
-    justify-content: center;
-  }
-
-  .level-hard__item {
-    transition: translateY .5s, transform .5s;
-  }
-
-  .level-hard__item:hover {
-    transform: translateY(-38px) rotate(-3deg);
-  }
-}
-
 @media (max-width: 1024px) {
-  body {
-    margin: 0;
-    background: url(img/background.jpg);
-  }
-
-  .off {
-    display: none;
-  }
-
-  .wrapper {
-    margin: auto;
-    padding-top: 129px;
-    width: 86%;
-    z-index: 10;
-    color: white;
-  }
-
   .start-page__heading {
-    margin: 0;
-    margin-bottom: 9px;
-    font: 57px/67px Roboto, arial, helvetica, sans-serif;
-    font-weight: 700;
-  }
-
-  .start-page__subheading {
-    margin: 0;
-    margin-bottom: 60px;
-    font: 19px/22px Roboto, arial, helvetica, sans-serif;
-    font-weight: 700;
-  }
-
-  .start-page__menu {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .first-part__choosing-list {
-    margin-left: 51px;
-    margin-bottom: 48px;
-  }
-
-  .choosing-list__item {
-    position: relative;
-    cursor: pointer;
-    font: 50px/59px Roboto, arial, helvetica, sans-serif;
-    font-weight: 700;
-    margin-bottom: 24px;
-    transition: color 1s;
-  }
-
-  .choosing-list__item:hover {
-    color: #ba376c;
-  }
-
-  .first-part__button {
-    display: inline-block;
-    padding: 29px 88px;
-    text-decoration: none;
-    color: white;
-    font: 32px/37px Roboto bold, arial, helvetica, sans-serif;
-    border-radius: 7px;
-    background: #ba376c;
-    transition: ease .5s;
-  }
-
-  .first-part__button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
-  }
-
-  .menu__second-part {
-    margin-top: -19px;
-  }
-
-  .second-part__first-card {
-    margin-right: -109px;
-    padding-bottom: 23px;
-    width: 234px;
-    height: 319px;
-  }
-
-  .second-part__second-card {
-    transform: rotate(28deg);
-    padding-top: 20px;
-    padding-right: 17px;
-    width: 234px;
-    height: 319px;
-  }
-
-  .game-page__level-easy {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 0fr 0fr 0fr;
-    grid-gap: 1.3vw;
-    justify-content: center;
-    margin-top: 212px;
-    margin-right: -20px;
-  }
-
-  .level-easy__item {
-    transition: translateY .5s, transform .5s;
-  }
-
-  .level-easy__item:hover {
-    transform: translateY(-38px) rotate(-3deg);
-  }
-
-  .game-page__level-middle {
-    display: grid;
-    margin-top: 29px;
-    grid-template-rows: 2fr;
-    grid-template-columns: 0fr 0fr 0fr;
-    grid-gap: 1.3vw;
-    justify-content: center;
-  }
-
-  .level-middle__item {
-    transition: translateY .5s, transform .5s;
-  }
-
-  .level-middle__item:hover {
-    transform: translateY(-38px) rotate(-3deg);
-  }
-
-  .game-page__level-hard {
-    display: grid;
-    margin-top: 29px;
-    grid-template-rows: 2fr;
-    grid-template-columns: 0fr 0fr;
-    grid-gap: 1.3vw;
-    justify-content: center;
-  }
-
-  .level-hard__item {
-    width: 180px;
-    height: 250px;
-    transition: translateY .5s, transform .5s;
-  }
-
-  .level-hard__item:hover {
-    transform: translateY(-38px) rotate(-3deg);
-  }
-}
-
-@media (max-width: 993px) {
-    body {
-    margin: 0;
-    background: url(img/background.jpg);
-  }
-
-  .off {
-    display: none;
-  }
-
-  .wrapper {
-    margin: auto;
-    padding-top: 129px;
-    width: 86%;
-    z-index: 10;
-    color: white;
-  }
-
-  .start-page__heading {
-    margin: 0;
-    margin-bottom: 9px;
     font: 53px/63px Roboto, arial, helvetica, sans-serif;
     font-weight: 700;
   }
 
   .start-page__subheading {
-    margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font: 17px/20px Roboto, arial, helvetica, sans-serif;
     font-weight: 700;
   }
 
-  .start-page__menu {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .first-part__choosing-list {
-    margin-left: 51px;
-    margin-bottom: 30px;
-  }
-
   .choosing-list__item {
-    position: relative;
-    cursor: pointer;
-    font: 40px/59px Roboto, arial, helvetica, sans-serif;
+    font: 47px/56px Roboto, arial, helvetica, sans-serif;
     font-weight: 700;
-    margin-bottom: 24px;
-    transition: color 1s;
-  }
-
-  .choosing-list__item:hover {
-    color: #ba376c;
-  }
-
-  .first-part__button {
-    display: inline-block;
-    padding: 29px 88px;
-    text-decoration: none;
-    color: white;
-    font: 32px/37px Roboto bold, arial, helvetica, sans-serif;
-    border-radius: 7px;
-    background: #ba376c;
-    transition: ease .5s;
-  }
-
-  .first-part__button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
-  }
-
-  .menu__second-part {
-    margin-top: -19px;
-  }
-
-  .second-part__first-card {
-    margin-right: -109px;
-    padding-bottom: 23px;
-    width: 234px;
-    height: 319px;
-  }
-
-  .second-part__second-card {
-    transform: rotate(28deg);
-    padding-top: 20px;
-    padding-right: 17px;
-    width: 234px;
-    height: 319px;
-  }
-
-  .game-page__level-easy {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 0fr 0fr 0fr;
-    grid-gap: 1.3vw;
-    justify-content: center;
-    margin-top: 212px;
-    margin-right: -20px;
-  }
-
-  .level-easy__item {
-    transition: translateY .5s, transform .5s;
-  }
-
-  .level-easy__item:hover {
-    transform: translateY(-38px) rotate(-3deg);
-  }
-
-  .game-page__level-middle {
-    display: grid;
-    margin-top: 29px;
-    grid-template-rows: 2fr;
-    grid-template-columns: 0fr 0fr;
-    grid-gap: 1.3vw;
-    justify-content: center;
-  }
-
-  .level-middle__item {
-    transition: translateY .5s, transform .5s;
-  }
-
-  .level-middle__item:hover {
-    transform: translateY(-38px) rotate(-3deg);
-  }
-
-  .game-page__level-hard {
-    display: grid;
-    margin-top: 29px;
-    grid-template-rows: 2fr;
-    grid-template-columns: 0fr 0fr;
-    grid-gap: 1.3vw;
-    justify-content: center;
-  }
-
-  .level-hard__item {
-    transition: translateY .5s, transform .5s;
-  }
-
-  .level-hard__item:hover {
-    transform: translateY(-38px) rotate(-3deg);
   }
 }
