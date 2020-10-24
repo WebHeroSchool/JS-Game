@@ -1,73 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <link name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="utf-8">
+    <link name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       JS Game
     </title>
-    <link rel='stylesheet' href='styles.css'>
-    <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   </head>
   <body>
-    <div class='wrapper'>
-      <div class='start-page'>
-        <h1 class='start-page__heading'>
+    <div class="wrapper">
+      <div class="start-page">
+        <h1 class="start-page__heading">
           Выберите уровень сложности:
         </h1>
-        <h4 class='start-page__subheading'>
+        <h4 class="start-page__subheading">
           Выберите сложность и игра начнётся. Чем выше уровень - тем больше будет выборка карт.
         </h4>
-        <div class='start-page__menu'>
-          <div class='menu__first-part'>
-            <div class='first-part__choosing-list'>
-              <div class='choosing-list__easy choosing-list__item'>
+        <div class="start-page__menu">
+          <div class="menu__first-part">
+            <div class="first-part__choosing-list">
+              <div class="choosing-list__easy choosing-list__item">
                 Простой
               </div>
-              <div class='choosing-list__middle choosing-list__item'>
+              <div class="choosing-list__middle choosing-list__item">
                 Средний
               </div>
-              <div class='choosing-list__hard choosing-list__item'>
+              <div class="choosing-list__hard choosing-list__item">
                 Сложный
               </div>
             </div>
-            <a class='first-part__button' href='#'>Начать игру</a>
-          </div>
-          <div class='menu__second-part'>
-            <img src='img/card.png' alt='rhombus' class='second-part__first-card'>
-            <img src='img/card.png' alt='rhombus' class='second-part__second-card'>
+            <a class="first-part__button" href="#">Начать игру</a>
           </div>
         </div>
       </div>
-      <div class='game-page'>
-        <div class='game-page__level-easy'>
-          <img src='img/game-card.png' alt='picture' class='level-easy__item'>
-          <img src='img/game-card.png' alt='picture' class='level-easy__item'>
-          <img src='img/game-card.png' alt='picture' class='level-easy__item'>
-        </div>
-        <div class='game-page__level-middle'>
-          <img src='img/game-card.png' alt='picture' class='level-middle__item'>
-          <img src='img/game-card.png' alt='picture' class='level-middle__item'>
-          <img src='img/game-card.png' alt='picture' class='level-middle__item'>
-          <img src='img/game-card.png' alt='picture' class='level-middle__item'>
-          <img src='img/game-card.png' alt='picture' class='level-middle__item'>
-          <img src='img/game-card.png' alt='picture' class='level-middle__item'>
-        </div>
-        <div class='game-page__level-hard'>
-          <img src='img/game-card.png' alt='picture' class='level-hard__item'>
-          <img src='img/game-card.png' alt='picture' class='level-hard__item'>
-          <img src='img/game-card.png' alt='picture' class='level-hard__item'>
-          <img src='img/game-card.png' alt='picture' class='level-hard__item'>
-          <img src='img/game-card.png' alt='picture' class='level-hard__item'>
-          <img src='img/game-card.png' alt='picture' class='level-hard__item'>
-          <img src='img/game-card.png' alt='picture' class='level-hard__item'>
-          <img src='img/game-card.png' alt='picture' class='level-hard__item'>
-          <img src='img/game-card.png' alt='picture' class='level-hard__item'>
-          <img src='img/game-card.png' alt='picture' class='level-hard__item'>
+      <div class="game-page">
+        <div class="game-page__levels">
+          <img src="img/game-card.png" alt="picture" class="levels__item">
+          <img src="img/game-card.png" alt="picture" class="levels__item">
+          <img src="img/game-card.png" alt="picture" class="levels__item">
+          <img src="img/game-card.png" alt="picture" class="levels__item">
+          <img src="img/game-card.png" alt="picture" class="levels__item">
+          <img src="img/game-card.png" alt="picture" class="levels__item">
+          <img src="img/game-card.png" alt="picture" class="levels__item">
+          <img src="img/game-card.png" alt="picture" class="levels__item">
+          <img src="img/game-card.png" alt="picture" class="levels__item">
         </div>
       </div>
     </div>
-    <script src='script.js'></script>
+    <script src="script.js"></script>
   </body>
 </html>
 
