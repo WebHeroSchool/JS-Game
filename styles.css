@@ -61,6 +61,39 @@ body {
   color: #ba376c;
 }
 
+.choosing-list__easy.active {
+  position: relative;
+}
+
+.choosing-list__easy.active::before {
+  position: absolute;
+  content: url(img/rhombus.png);
+  margin-left: -49px;
+  margin-top: -5px;
+}
+
+.choosing-list__middle.active {
+  position: relative;
+}
+
+.choosing-list__middle.active::before {
+  position: absolute;
+  content: url(img/rhombus.png);
+  margin-left: -49px;
+  margin-top: -5px;
+}
+
+.choosing-list__hard.active {
+  position: relative;
+}
+
+.choosing-list__hard.active::before {
+  position: absolute;
+  content: url(img/rhombus.png);
+  margin-left: -49px;
+  margin-top: -5px;
+}
+
 .first-part__button {
   display: inline-block;
   padding: 29px 88px;
@@ -183,7 +216,6 @@ body {
     width: 139px;
     height: 192px;
   }
-
 }
 
 @media (max-width: 375px) {
@@ -224,6 +256,3 @@ body {
     height: 117px;
   }
 }
-
-
-
