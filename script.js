@@ -16,15 +16,13 @@ document.querySelector('.first-part__button').addEventListener('click', function
   for (let i=0; i<level; i++) {
     let card = document.querySelector('.hidden-page .levels__item').cloneNode(true);
 
+    card.addEventListener('click', function(event) {
+      console.log('Клик по карте!');
+    });
+
     document.querySelector('.game-page__levels').append(card);
   };
 })
-
-for (let card of document.querySelectorAll('.levels__item')) {
-  card.addEventListener('click', function(event) {
-    console.log('Клик по карте!');
-  });
-}
 
 function getCards(arrLength) {
   let arr = Array(arrLength).fill(0);
