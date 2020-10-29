@@ -13,8 +13,8 @@ document.querySelector('.first-part__button').addEventListener('click', function
   let level = document.querySelector('.active').dataset.level;
   console.log(level);
 
-  for (let i=1; i<level; i++) {
-    let card = document.querySelector('.game-page .levels__item').cloneNode(true);
+  for (let i=0; i<level; i++) {
+    let card = document.querySelector('.hidden-page .levels__item').cloneNode(true);
 
     document.querySelector('.game-page__levels').append(card);
   };
