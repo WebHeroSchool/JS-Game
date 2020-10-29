@@ -15,13 +15,17 @@ body {
   color: white;
 }
 
+.start-page.off {
+  display: none;
+}
+
 .start-page {
-  padding-top: 131px;
-  padding-left: 26px;
+  padding: 131px 0 0 26px;
   height: 100vh;
   background-image: url(img/cards.png);
   background-repeat: no-repeat;
-  background-position: bottom 226px right -8px;
+  background-position: bottom 92px right -8px;
+  box-sizing: border-box;
 }
 
 .start-page__heading {
@@ -110,6 +114,10 @@ body {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
+.game-page.off {
+  display: none;
+}
+
 .game-page {
   height: 100vh;
   display: flex;
@@ -121,6 +129,10 @@ body {
   grid-template-columns: 215px 215px 215px;
   grid-gap: 1.2vw;
   align-content: center;
+}
+
+.game-page__levels.off {
+  display: none;
 }
 
 .levels__item {
@@ -187,7 +199,7 @@ body {
     height: 100%;
   }
 
-    .start-page__heading {
+  .start-page__heading {
     font: 45px/58px Roboto, arial, helvetica, sans-serif;
     font-weight: 700;
   }
