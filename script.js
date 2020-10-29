@@ -1,10 +1,30 @@
-let easyLvl = document.querySelector('.choosing-list__easy.active').dataset('level');
-let midLvl = document.querySelector('.choosing-list__middle').dataset('level');
-let hardLvl = document.querySelectore('.choosing-list__hard').dataset('level');
-midLvl.addEventListener('click', () => {
-  easyLvl.classList.remove('active');
-  midLvl.classList.add('active');
-});
+for (let button of document.querySelectorAll('.choosing-list__item')) {
+  button.addEventListener('click', function(event) {
+    document.querySelector('.active').classList.remove('active');
+    this.classList.add('active');
+  });
+}
+
+document.querySelector('.first-part__button').addEventListener('click', function(event) {
+  document.querySelector('.start-page').classList.add('off');
+  document.querySelector('.game-page').classList.remove('off');
+  document.querySelector('.game-page__levels').classList.remove('off');
+
+  let level = document.querySelector('.active').dataset.level;
+  console.log(level);
+
+  for (let i=1; i<level; i++) {
+    let card = document.querySelector('.game-page .levels__item').cloneNode(true);
+
+    document.querySelector('.game-page__levels').append(card);
+  };
+})
+
+for (let card of document.querySelectorAll('.levels__item')) {
+  card.addEventListener('click', function(event) {
+    console.log('Клик по карте!');
+  });
+}
 
 function getCards(arrLength) {
   let arr = Array(arrLength).fill(0);
@@ -15,16 +35,13 @@ function getCards(arrLength) {
 }
 
 function getGameData(level) {
-  let gameData = {
-    cards: getCards(level),
-    level: level
-  }
-  
+  let gameData = getCards(level);
+
   return gameData;
 }
 
 function checkGameResult(cardIndex) {
-  if (getGameData(level).cards[cardIndex] > 0) {
+  if (getGameData(level)[cardIndex] > 0) {
     return true;
   } else {
     return false;
