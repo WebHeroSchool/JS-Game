@@ -17,7 +17,9 @@ document.querySelector('.first-part__button').addEventListener('click', function
     let card = document.querySelector('.hidden-page .levels__item').cloneNode(true);
 
     card.addEventListener('click', function(event) {
-      console.log('Клик по карте!');
+      let setCollection = document.querySelectorAll('.game-page__levels .levels__item');
+      let rand = [ ...setCollection ].indexOf(this);
+      console.log(rand);
     });
 
     document.querySelector('.game-page__levels').append(card);
