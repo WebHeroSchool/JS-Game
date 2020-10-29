@@ -135,6 +135,10 @@ body {
   display: none;
 }
 
+.hidden-page.off {
+  display: none;
+}
+
 .levels__item {
   width: 215px;
   height: 301px;
