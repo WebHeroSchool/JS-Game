@@ -23,18 +23,10 @@ document.querySelector('.first-part__button').addEventListener('click', function
 
       if (gameResult === true) {
         card.classList.add('card__bug');
-        card.addEventListener('click', function(event) {
-          document.querySelector('.start-page').classList.remove('off');
-          document.querySelector('.game-page').classList.add('off');
-          document.querySelector('.game-page__levels').classList.add('off');
-        });
+        card.addEventListener('click', menu);
       } else {
         card.classList.add('card__game-over');
-        card.addEventListener('click', function(event) {
-          document.querySelector('.start-page').classList.remove('off');
-          document.querySelector('.game-page').classList.add('off');
-          document.querySelector('.game-page__levels').classList.add('off');
-        });
+        card.addEventListener('click', menu);
       }
     });
 
@@ -62,4 +54,8 @@ function checkGameResult(cardIndex, level) {
   } else {
     return false;
   }
+}
+
+function menu() {
+  location.reload();
 }
