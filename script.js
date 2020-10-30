@@ -18,12 +18,24 @@ document.querySelector('.first-part__button').addEventListener('click', function
 
     card.addEventListener('click', function(event) {
       let setCollection = document.querySelectorAll('.game-page__levels .levels__item');
-      let setValue = getGameData(setLevel);
-      let rand = Math.floor(Math.random() * setValue.length);
-      let setRandValue = setValue[rand];
-      console.log(setRandValue);
       let cardIndex = [ ...setCollection ].indexOf(this);
-      console.log(cardIndex);
+      let gameResult = checkGameResult(cardIndex, setLevel);
+
+      if (gameResult === true) {
+        card.classList.add('card__bug');
+        card.addEventListener('click', function(event) {
+          document.querySelector('.start-page').classList.remove('off');
+          document.querySelector('.game-page').classList.add('off');
+          document.querySelector('.game-page__levels').classList.add('off');
+        });
+      } else {
+        card.classList.add('card__game-over');
+        card.addEventListener('click', function(event) {
+          document.querySelector('.start-page').classList.remove('off');
+          document.querySelector('.game-page').classList.add('off');
+          document.querySelector('.game-page__levels').classList.add('off');
+        });
+      }
     });
 
     document.querySelector('.game-page__levels').append(card);
@@ -44,7 +56,7 @@ function getGameData(level) {
   return gameData;
 }
 
-function checkGameResult(cardIndex) {
+function checkGameResult(cardIndex, level) {
   if (getGameData(level)[cardIndex] > 0) {
     return true;
   } else {
