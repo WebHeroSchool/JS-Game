@@ -11,15 +11,19 @@ document.querySelector('.first-part__button').addEventListener('click', function
   document.querySelector('.game-page__levels').classList.remove('off');
 
   let level = document.querySelector('.active').dataset.level;
-  console.log(level);
+  setLevel = Number(level);
 
   for (let i=0; i<level; i++) {
     let card = document.querySelector('.hidden-page .levels__item').cloneNode(true);
 
     card.addEventListener('click', function(event) {
       let setCollection = document.querySelectorAll('.game-page__levels .levels__item');
-      let rand = [ ...setCollection ].indexOf(this);
-      console.log(rand);
+      let setValue = getGameData(setLevel);
+      let rand = Math.floor(Math.random() * setValue.length);
+      let setRandValue = setValue[rand];
+      console.log(setRandValue);
+      let cardIndex = [ ...setCollection ].indexOf(this);
+      console.log(cardIndex);
     });
 
     document.querySelector('.game-page__levels').append(card);
