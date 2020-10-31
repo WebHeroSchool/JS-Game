@@ -149,14 +149,24 @@ body {
   transform: translateY(-38px) rotate(-3deg);
 }
 
-.card__game-over {
+.card-game-over {
   transform: rotateY(180deg);
   content: url(img/game-over.png);
 }
 
-.card__bug {
+.card-game-over.opened {
+  transform: none;
+  transiton: none;
+}
+
+.card-bug {
   transform: rotateY(180deg);
   content: url(img/bug.png);
+}
+
+.card-bug.opened {
+  transform: none;
+  transiton: none;
 }
 
 @media (max-width: 1024px) {
