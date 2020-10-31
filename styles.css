@@ -209,6 +209,7 @@ body {
 @media (max-width: 920px) {
   .start-page {
     padding-top: 45px;
+    padding-bottom: 45px;
     background-image: none;
     height: 100%;
   }
@@ -251,24 +252,24 @@ body {
   }
 
   .start-page__heading {
-    font: 47px/57px Roboto, arial, helvetica, sans-serif;
+    font: 40px/50px Roboto, arial, helvetica, sans-serif;
     font-weight: 700;
   }
 
   .start-page__subheading {
     margin-bottom: 34px;
-    font: 14px/17px Roboto, arial, helvetica, sans-serif;
+    font: 12px/15px Roboto, arial, helvetica, sans-serif;
     font-weight: 700;
   }
 
   .choosing-list__item {
-    font: 42px/51px Roboto, arial, helvetica, sans-serif;
+    font: 40px/49px Roboto, arial, helvetica, sans-serif;
     font-weight: 700;
   }
 
   .first-part__button {
-    padding: 27px 50px;
-    font: 30px/35px Roboto bold, arial, helvetica, sans-serif;
+    padding: 20px 47px;
+    font: 28px/33px Roboto bold, arial, helvetica, sans-serif;
     background: #ba376c;
   } 
 
